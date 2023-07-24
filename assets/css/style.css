@@ -1,0 +1,581 @@
+
+
+
+h1{text-shadow: rgb(11, 11, 11) 3px 0 10px;}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  height: 45px;
+  
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 100);
+  background: rgb(0, 0, 0,0.75);
+  
+}
+
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  
+  
+  padding: 0px 0 10px 40px;
+  font-size: 14px;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #313FC8;
+}
+
+
+
+
+
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #2c4964;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(13, 21, 29, 0.6);
+  transition: 0.3s;
+  z-index: 998;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #2c4964;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #d43076;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+  color: #d43076;
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/gaetano-cessati-CCy2UFLO1Mg-unsplash.jpg") top center;
+  
+  background-size: cover;
+  padding: 6 15px;  
+}
+
+
+
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero .btn-get-started {
+  font-size: 64px;
+  transition: 0.5s;
+  color: #fff;
+  height: 60px;
+}
+
+#hero .btn-get-started:hover {
+  padding-top: 10px;
+  color: #d43076;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 50px 10px;
+  background: url("../img/andrew-kliatskyi-r4HT6aurLQw-unsplash.jpg") top center 
+}
+
+.section-bg {
+  background: url("../img/andrew-kliatskyi-r4HT6aurLQw-unsplash.jpg") top center
+}
+
+  
+
+
+.section-title {
+  padding-bottom: 0px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  color: #fefefe;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #313FC8;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about .content {
+  background:black;
+  opacity: 70%;
+}
+
+.about .content h3 {
+  font-weight: 500;
+  font-size: 34px;
+  color: #fcfefe;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 82px #5263ff,
+      0 0 92px #001aff,
+      0 0 102px #3b4eff,;
+  margin-left: 260px;
+}
+
+
+
+.about .content .count-box {
+  padding: 20px 0;
+}
+
+
+
+
+.about .content .count-box p {
+  padding: 15px 0 100;
+  margin: 10px 50px 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #ffffff;
+
+}
+
+
+
+.about .image {
+  background: url("../img/WhatsApp Image 2023-07-24 at 12.15.33 AM.jpeg") center center no-repeat;
+  background-size:cover;
+  min-height: 500px;
+  background-color: #000000;
+}
+
+@media (max-width: 990px) {
+  .about .image {
+    text-align: center;
+  }
+
+  .about .image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 667px) {
+  .about .image img {
+    max-width: 80%;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.work-box:hover img {
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
+
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 40px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: #2c4964;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #6b96be;
+  margin: 0 0 0 45px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #f7d9e6;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 20px 15px 15px 15px;
+  padding: 20px 20px 20px 20px;
+  background: #313FC8;
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #d43076;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #d43076;
+}
+
+@media (max-width: 767px) {
+  .testimonials {
+    margin: 30px 10px;
+  }
+}
+
+
+.footer{height: 45px;
+  color:#000000;
+
+}
+
+
+
+
+
+
+.animated{
+  font-size: 2.4rem;
+
+  white-space: nowrap;
+  font-family: 'Times New Roman', serif;
+  color: #ffffff;
+  
+  text-shadow: rgb(19, 19, 19) 0px 0 10px;
+  
+ 
+  
+}
+.animated span::before{
+  content: 'Student';
+  color:#fbfbfc;
+
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #3546de,
+      0 0 21px #7682ef,
+      0 0 42px #808bed,
+      0 0 82px #5263ff,
+      0 0 92px #001aff,
+      0 0 102px #3b4eff,
+      0 0 151px #a0aaff;;
+
+  animation:words 5s infinite
+
+
+}
+.animated span::after{
+  content: '';
+  color:red;
+  background-image:'Lonely/Mypage/assets/img/gaetano-cessati-CCy2UFLO1Mg-unsplash.jpg' ;
+  position: absolute;
+  width: calc(100%+8px);
+  height: 100;
+  border-left: 2px solid red;
+  right:-8px;
+  animation: cursor .6s infinite,typing 10s steps(10) infinite;
+ 
+
+
+}
+@keyframes cursor {
+  to{
+    border-left: 2px solid red;
+  }
+  
+}
+@keyframes words{
+  0%,20%{
+    content: 'Photographer';
+  }
+  21%,40%{
+    content: 'Engineer';
+
+  }
+  41%,60%{
+    content: 'Student';
+
+  }
+  61%,80%{
+    content: 'Photographer';
+
+  }
+  81%,100%{
+    content: 'Engineer';
+
+  }
+  
+}
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100%+8px);
+  }
+  
+}
